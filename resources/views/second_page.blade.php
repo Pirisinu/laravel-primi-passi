@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Primo Laravel</title>
+    <title>Seconda pagina Laravel</title>
 </head>
 <body>
-    <h1>{{$saluto}}</h1>
-    <a href="/second_page">Second page</a>
+    <h1>{{$salutoSecondaPagina}}</h1>
+    <a href="/">home</a>
 </body>
 </html>

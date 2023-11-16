@@ -17,3 +17,7 @@ Route::get('/', function () {
     $saluto ='ciao da Laravel';
     return view('home', compact('saluto'));
 });
+Route::get('/second_page', function () {
+    $salutoSecondaPagina ='Ciao seconda pagina Laravel';
+    return view('second_page', compact('salutoSecondaPagina'));
+});

@@ -14,10 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $saluto ='ciao da Laravel';
-    return view('home', compact('saluto'));
+    $titlo_Num ='Lista di numeri';
+    $limit = 20;
+    return view('home', compact('titlo_Num','limit'));
 });
 Route::get('/second_page', function () {
-    $salutoSecondaPagina ='Ciao seconda pagina Laravel';
-    return view('second_page', compact('salutoSecondaPagina'));
+    $salutoSecondaPagina ='Lista di frutta';
+    $fruits = ["mela", "banana", "kiwi", "fragola", "ananas", "uva", "arancia", "pesca", "ciliegia", "pera"];
+    return view('second_page', compact('salutoSecondaPagina', 'fruits'));
 });

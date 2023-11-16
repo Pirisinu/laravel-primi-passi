@@ -7,7 +7,19 @@
     <title>Primo Laravel</title>
 </head>
 <body>
-    <h1>{{$saluto}}</h1>
+    <h1>Prima pagina</h1>
+    <h2>{{$titlo_Num}}</h2>
+    <ul>
+
+        @for($i = 1; $i <= $limit; $i++)
+        @if ($i % 2)
+        <li style="color:red">{{$i}}</li>
+
+        @else
+            <li>{{$i}}</li>
+        @endif
+        @endfor
+    </ul>
     <a href="/second_page">Second page</a>
 </body>
 </html>
